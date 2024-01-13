@@ -51,7 +51,7 @@ def save_comments_to_excel(file, comments):
 
 if __name__ == '__main__':
     os.environ['NO_PROXY'] = 'api.github.com'
-    personal_token = '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'
+    personal_token = ''
     issues_html_urls = [i for i in pd.read_excel('data.xlsx', engine='openpyxl')['html_url'].to_list() if
                         '/issues/' in i]
     for issue_html_url in issues_html_urls:
